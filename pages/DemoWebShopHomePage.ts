@@ -7,7 +7,7 @@ import { Page, Locator, expect } from '@playwright/test';
 export default class DemoWebShopHomePage {
   readonly page: Page;
   readonly searchInput: Locator;
-  readonly searchButton: Locatr;
+  readonly searchButton: Locator;
   readonly productItems: Locator;
   readonly firstProductTitle: Locator;
   readonly cartQuantity: Locator;
@@ -33,7 +33,7 @@ export default class DemoWebShopHomePage {
 
   async searchFor(query: string): Promise<void> {
     await this.searchInput.fill(query);
-    await Promise.all([
+     Promise.all([
       this.page.waitForNavigation({ waitUntil: 'domcontentloaded' }),
       this.searchButton.click(),
     ]);
