@@ -7,7 +7,7 @@ import { Page, Locator, expect } from '@playwright/test';
 export default class DemoWebShopHomePage {
   readonly page: Page;
   readonly searchInput: Locator;
-  readonly searchButton: Locator;
+  readonly searchButton: Locatr;
   readonly productItems: Locator;
   readonly firstProductTitle: Locator;
   readonly cartQuantity: Locator;
