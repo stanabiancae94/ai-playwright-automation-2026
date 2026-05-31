@@ -33,7 +33,7 @@ export default class DemoWebShopHomePage {
 
   async searchFor(query: string): Promise<void> {
     await this.searchInput.fill(query);
-     Promise.all([
+    await Promise.all([
       this.page.waitForNavigation({ waitUntil: 'domcontentloaded' }),
       this.searchButton.click(),
     ]);
