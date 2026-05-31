@@ -1,9 +1,14 @@
 {
   "name": "automation-ai-2026",
   "version": "1.0.0",
-  "description": "",
+  "description": "Demo Web Shop Playwright automation portfolio",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "PWDEBUG=1 playwright test",
+    "test:ci": "playwright test --reporter=html"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
